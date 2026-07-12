@@ -1,0 +1,50 @@
+name: Stock Scan
+
+on:
+  schedule:
+    - cron: "30 21 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Cache pip
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('scanner/requirements.txt') }}
+
+      - name: Cache stock data
+        uses: actions/cache@v4
+        with:
+          path: scanner/stock_cache
+          key: stock-cache-${{ github.run_id }}
+          restore-keys: stock-cache-
+
+      - name: Install dependencies
+        run: pip install -r scanner/requirements.txt
+
+      - name: Run scan
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python scanner/scan_headless.py
+
+      - name: Commit results
+        run: |
+          git config user.name "stock-scanner-bot"
+          git config user.email "actions@github.com"
+          git add docs/alerts.json
+          git diff --staged --quiet || git commit -m "scan: $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
