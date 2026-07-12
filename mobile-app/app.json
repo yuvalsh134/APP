@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Screening Desk",
+    "slug": "screening-desk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A0F1A",
+    "splash": {
+      "backgroundColor": "#0A0F1A"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.screeningdesk"
+    },
+    "android": {
+      "package": "com.yourname.screeningdesk",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0F1A"
+      }
+    }
+  }
+}
