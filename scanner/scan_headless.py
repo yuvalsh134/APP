@@ -358,7 +358,7 @@ def has_high_volume_strong_close(hi,lo,cl,vol,lookback=20,top_pct=0.90):
     vol_prev = vol[-(lookback+1):-1]; vol_prev = vol_prev[~np.isnan(vol_prev)]
     if len(vol_prev) == 0: return False
     if vol[-1] <= vol_prev.mean(): return False
-    return (cl[-1]-lo[-1])/rng >= top_pct
+    return bool((cl[-1]-lo[-1])/rng >= top_pct)
 
 
 # ── financials ────────────────────────────────────────────
