@@ -103,7 +103,7 @@ def _load_spx_once():
         pass
 
 
-def get_tickers(limit=7000):
+def get_tickers(limit=70):
     if not os.path.exists(TICKERS_FILE):
         raise FileNotFoundError(
             f"Missing {TICKERS_FILE}. Commit a tickers.txt (one ticker per line, or CSV with ticker first) to scanner/."
