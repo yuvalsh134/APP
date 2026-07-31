@@ -1,6 +1,6 @@
 {
-  "scan_time": "2026-07-31 01:32:55",
-  "scan_duration_sec": 19,
+  "scan_time": "2026-08-01 01:30:09",
+  "scan_duration_sec": 21,
   "stats": {
     "total_scanned": 70,
     "ok": 52,
@@ -12,39 +12,21 @@
   "alerts": [
     {
       "ticker": "ACEL",
-      "price": 11.96,
-      "market_cap": 1003574457.0,
+      "price": 12.02,
+      "market_cap": 973459084.0,
       "rev_growth": 8.42,
       "rev_qtr_count": "4/4",
       "eps_qtr_count": "3/4",
-      "ath_dist": 14.57,
-      "vwap": 11.398,
-      "pe": 20.21,
+      "ath_dist": 14.14,
+      "vwap": 11.3914,
+      "pe": 19.6,
       "roe": 0.0541,
-      "volume": 138791,
-      "avg_volume_20": 256109,
-      "rs_rating": 46.8,
+      "volume": 194476,
+      "avg_volume_20": 258943,
+      "rs_rating": 51.6,
       "two_lower_shadow": false,
       "high_vol_strong_close": false,
       "category": "EMA200 SUPPORT"
-    },
-    {
-      "ticker": "AAPL",
-      "price": 333.43,
-      "market_cap": 4967116925640.0,
-      "rev_growth": 12.76,
-      "rev_qtr_count": "4/4",
-      "eps_qtr_count": "4/4",
-      "ath_dist": 3.23,
-      "vwap": 268.2111,
-      "pe": 40.91,
-      "roe": 0.3039,
-      "volume": 55501839,
-      "avg_volume_20": 49844596,
-      "rs_rating": 86.4,
-      "two_lower_shadow": false,
-      "high_vol_strong_close": false,
-      "category": "BUY RSI"
     }
   ]
 }
