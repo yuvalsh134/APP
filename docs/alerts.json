@@ -1,13 +1,13 @@
 {
-  "scan_time": "2026-10-30 03:11:11",
-  "scan_duration_sec": 1,
+  "scan_time": "2026-10-31 02:53:59",
+  "scan_duration_sec": 0,
   "stats": {
     "total_scanned": 70,
     "ok": 0,
-    "no_history": 10,
+    "no_history": 11,
     "no_financials": 0,
     "no_data": 0,
-    "error": 60
+    "error": 59
   },
   "alerts": []
 }
