@@ -1,13 +1,86 @@
 {
-  "scan_time": "2026-11-14 03:30:46",
-  "scan_duration_sec": 0,
+  "scan_time": "2026-11-17 06:02:09",
+  "scan_duration_sec": 7,
   "stats": {
     "total_scanned": 70,
-    "ok": 0,
-    "no_history": 12,
+    "ok": 54,
+    "no_history": 11,
     "no_financials": 0,
-    "no_data": 0,
-    "error": 58
+    "no_data": 5,
+    "error": 0
   },
-  "alerts": []
+  "alerts": [
+    {
+      "ticker": "ACGL",
+      "price": 110.89,
+      "market_cap": 35776704000.0,
+      "rev_growth": -5.13,
+      "rev_qtr_count": "1/4",
+      "eps_qtr_count": "2/4",
+      "ath_dist": 2.41,
+      "vwap": 96.4758,
+      "pe": 8.96,
+      "roe": 0.0436,
+      "volume": 2079900,
+      "avg_volume_20": 1984180,
+      "rs_rating": 75.7,
+      "two_lower_shadow": false,
+      "high_vol_strong_close": false,
+      "category": "BUY RSI"
+    },
+    {
+      "ticker": "ACEL",
+      "price": 13.8,
+      "market_cap": 1095562215.0,
+      "rev_growth": 9.0,
+      "rev_qtr_count": "4/4",
+      "eps_qtr_count": "4/4",
+      "ath_dist": 1.99,
+      "vwap": 11.6918,
+      "pe": 17.66,
+      "roe": 0.0699,
+      "volume": 527500,
+      "avg_volume_20": 628225,
+      "rs_rating": 77.4,
+      "two_lower_shadow": false,
+      "high_vol_strong_close": false,
+      "category": "BUY RSI"
+    },
+    {
+      "ticker": "ACHC",
+      "price": 38.7,
+      "market_cap": 3434647804.0,
+      "rev_growth": 4.47,
+      "rev_qtr_count": "3/4",
+      "eps_qtr_count": "0/4",
+      "ath_dist": 17.8,
+      "vwap": 23.3686,
+      "pe": null,
+      "roe": 0.0172,
+      "volume": 2650300,
+      "avg_volume_20": 2509260,
+      "rs_rating": 95.7,
+      "two_lower_shadow": false,
+      "high_vol_strong_close": true,
+      "category": "BUY RSI"
+    },
+    {
+      "ticker": "ACIW",
+      "price": 60.41,
+      "market_cap": 6153388723.0,
+      "rev_growth": 1.93,
+      "rev_qtr_count": "3/4",
+      "eps_qtr_count": "1/4",
+      "ath_dist": 4.26,
+      "vwap": 48.2922,
+      "pe": 46.5,
+      "roe": 0.0218,
+      "volume": 1035700,
+      "avg_volume_20": 1087120,
+      "rs_rating": 89.0,
+      "two_lower_shadow": false,
+      "high_vol_strong_close": false,
+      "category": "BUY RSI"
+    }
+  ]
 }
