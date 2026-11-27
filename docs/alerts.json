@@ -1,6 +1,6 @@
 {
-  "scan_time": "2026-11-26 05:40:11",
-  "scan_duration_sec": 8,
+  "scan_time": "2026-11-27 05:41:21",
+  "scan_duration_sec": 7,
   "stats": {
     "total_scanned": 70,
     "ok": 52,
@@ -13,13 +13,13 @@
     {
       "ticker": "ACM",
       "price": 83.43,
-      "market_cap": 10399891436.0,
+      "market_cap": 10737073908.0,
       "rev_growth": -6.46,
       "rev_qtr_count": "1/4",
       "eps_qtr_count": "2/4",
       "ath_dist": 38.44,
       "vwap": 77.8477,
-      "pe": 28.69,
+      "pe": 29.62,
       "roe": 0.0562,
       "volume": 1934300,
       "avg_volume_20": 1739450,
